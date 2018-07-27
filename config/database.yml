@@ -23,11 +23,11 @@ default: &default
 
 development:
   <<: *default
-    database: d6rcv209ls8rf9
-    username: olcvmfdxhsyyro
-    password: 77d7a1bedc1a6d340b9e6292946ee38371f4ad07c9717ce25a38fe9a5e5bcb1d
-    host: ec2-54-235-193-34.compute-1.amazonaws.com
-    port: 5432
+  database: d6rcv209ls8rf9
+  username: olcvmfdxhsyyro
+  password: 77d7a1bedc1a6d340b9e6292946ee38371f4ad07c9717ce25a38fe9a5e5bcb1d
+  host: ec2-54-235-193-34.compute-1.amazonaws.com
+  port: 5432
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
@@ -59,12 +59,12 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  <<: *default
-   database: d6rcv209ls8rf9
-   username: olcvmfdxhsyyro
-   password: 77d7a1bedc1a6d340b9e6292946ee38371f4ad07c9717ce25a38fe9a5e5bcb1d
-   host: ec2-54-235-193-34.compute-1.amazonaws.com
-   port: 5432
+<<: *default
+database: d6rcv209ls8rf9
+username: olcvmfdxhsyyro
+password: 77d7a1bedc1a6d340b9e6292946ee38371f4ad07c9717ce25a38fe9a5e5bcb1d
+host: ec2-54-235-193-34.compute-1.amazonaws.com
+port: 5432
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
 # ever seen by anyone, they now have access to your database.
@@ -85,9 +85,9 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: d6rcv209ls8rf9
-  username: olcvmfdxhsyyro
-  password: 77d7a1bedc1a6d340b9e6292946ee38371f4ad07c9717ce25a38fe9a5e5bcb1d
-  host: ec2-54-235-193-34.compute-1.amazonaws.com
-  port: 5432
+<<: *default
+database: d6rcv209ls8rf9
+username: olcvmfdxhsyyro
+password: 77d7a1bedc1a6d340b9e6292946ee38371f4ad07c9717ce25a38fe9a5e5bcb1d
+host: ec2-54-235-193-34.compute-1.amazonaws.com
+port: 5432
