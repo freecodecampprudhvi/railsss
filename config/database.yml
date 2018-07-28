@@ -81,13 +81,7 @@ port: 5432
 #
 # You can use this database configuration with:
 #
-#   production:
-#     url: <%= ENV['DATABASE_URL'] %>
-#
-production:
-<<: *default
-database: d6rcv209ls8rf9
-username: olcvmfdxhsyyro
-password: 77d7a1bedc1a6d340b9e6292946ee38371f4ad07c9717ce25a38fe9a5e5bcb1d
-host: ec2-54-235-193-34.compute-1.amazonaws.com
-port: 5432
+   production:
+     url: <%= ENV['DATABASE_URL'] %>
+
+
